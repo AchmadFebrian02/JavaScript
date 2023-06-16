@@ -11,18 +11,18 @@
 // *  5. Jika nilai score di bawah 60:
 // *      - Isi variabel result dengan nilai: 'Anda mendapatkan nilai E.'
 
-let score = 70; // parameter nilai tergantung dengan apa yang kita mau ambil data nya dari sebuah if
+let nilai = 70; // parameter nilai tergantung dengan apa yang kita mau ambil data nya dari sebuah if
 
-if (score >= 90) {
+if (nilai >= 90) {
   let result = 'Selamat! Anda mendapatkan nilai A.';
   console.log(result);
-} else if (score >= 80) {
+} else if (nilai >= 80) {
   let result = 'Anda mendapatkan nilai B.';
   console.log(result);
-} else if (score >= 70) {
+} else if (nilai >= 70) {
   let result = 'Anda mendapatkan nilai C.';
   console.log(result);
-} else if (score >= 60) {
+} else if (nilai >= 60) {
   let result = 'Anda mendapatkan nilai D.';
   console.log(result);
 } else {
@@ -56,15 +56,15 @@ console.log(ganjil);
 
 const angka = [1, 2, 3, 4, 10, 11];
 
-function jumlahkan(arr) {
+function jumlahkan(nilai) {
   let output = '';
   let sum = 0;
 
-  for (let i = 0; i < arr.length; i++) {
-    sum += arr[i];
-    output += arr[i];
+  for (let i = 0; i < nilai.length; i++) {
+    sum += nilai[i];
+    output += nilai[i];
 
-    if (i !== arr.length - 1) {
+    if (i !== nilai.length - 1) {
       output += ' + ';
     }
   }
@@ -74,7 +74,8 @@ function jumlahkan(arr) {
 }
 
 const hasil = jumlahkan(angka);
-console.log(hasil); // hasil output: '1 + 2 + 3 + 4 + 10 + 11 = 31'
+console.log(hasil); 
+
 
 
 // Soal Nomor 4
@@ -99,7 +100,7 @@ function hitunglilinPalingTinggi(arr) {
 }
 
 const hasil = hitunglilinPalingTinggi(lilin);
-console.log(hasil); // hasil output: 'Ada (2) buah lilin paling tinggi'
+console.log(hasil);
 
 
 // // Soal Nomor 5
