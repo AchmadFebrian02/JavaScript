@@ -83,15 +83,15 @@ console.log(hasil);
 
 const lilin = [3, 2, 1, 3, 1, 1];
 
-function hitunglilinPalingTinggi(arr) {
+function hitunglilinPalingTinggi(nilai) {
   let maxCandleHeight = 0;
   let count = 0;
 
-  for (let i = 0; i < arr.length; i++) {
+  for (let i = 0; i < nilai.length; i++) {
     if (arr[i] > maxCandleHeight) {
-      maxCandleHeight = arr[i];
+      maxCandleHeight = nilai[i];
       count = 1;
-    } else if (arr[i] === maxCandleHeight) {
+    } else if (nilai[i] === maxCandleHeight) {
       count++;
     }
   }
